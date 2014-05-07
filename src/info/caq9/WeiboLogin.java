@@ -318,8 +318,8 @@ public class WeiboLogin {
 		String newLocation = callback.substring(
 				callback.lastIndexOf("location.replace"),
 				callback.lastIndexOf(';') + 1);
-		newLocation = newLocation.substring(newLocation.indexOf('"') + 1,
-				newLocation.lastIndexOf('"'));
+		newLocation = newLocation.substring(newLocation.indexOf('\'') + 1,
+				newLocation.lastIndexOf('\''));
 		if (DEBUG)
 			System.out.println("New location: " + newLocation);
 
